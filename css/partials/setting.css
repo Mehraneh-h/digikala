@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "iranYekanMedium";
+  src: url(../../fonts/fa/Iranyekan-medium/IRANYekanWeb-Medium.eot);
+  src: url(../../fonts/fa/IRANYekanWeb-Medium.ttf);
+  src: url(../../fonts/fa/Iranyekan-medium/IRANYekanWeb-Medium.woff);
+  src: url(../../fonts/fa/Iranyekan-medium/IRANYekanWeb-Medium.woff2);
+}
+@font-face {
+  font-family: "iranYekanRegular";
+  src: url(../../fonts/fa/Iranyekan-regular/IRANYekanWeb.eot);
+  src: url(../../fonts/fa/Iranyekan-regular/IRANYekanWeb.ttf);
+  src: url(../../fonts/fa/Iranyekan-regular/IRANYekanWeb.woff);
+  src: url(../../fonts/fa/Iranyekan-regular/IRANYekanWeb.woff2);
+}
+@font-face {
+  font-family: "Shabnam";
+  src: url(../../fonts/fa/Shabnam/Shabnam.eot);
+  src: url(../../fonts/fa/Shabnam/Shabnam.ttf);
+  src: url(../../fonts/fa/Shabnam/Shabnam.woff);
+  src: url(../../fonts/fa/Shabnam/Shabnam.woff2);
+}
+:root {
+  --fontFamily: "iranYekanRegular";
+  --fontFamilyMedium: "iranYekanMedium";
+  --fontNumber: "Shabnam";
+}
+.wrapper {
+  width: 100%;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 14px;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: #2b2b2b;
+  transition: 300ms;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #fff !important;
+}

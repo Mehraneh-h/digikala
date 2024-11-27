@@ -1,0 +1,28 @@
+.first-recommend , .second-recommend {
+  width: 100%;
+  height: 264px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  .first-recommend-center , .second-recommend-center {
+    width: 88%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    .first-recommend-center-link , .second-recommend-center-link {
+      width: 660px;
+      height: inherit;
+      .first-recommend-center-link-item , .second-recommend-center-link-item {
+        width: inherit;
+        height: inherit;
+        .first-recommend-center-link-item-img , .second-recommend-center-link-item-img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}

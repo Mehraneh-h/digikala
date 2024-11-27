@@ -1,0 +1,3297 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- #region project-->
+    <div class="wrapper">
+      <!-- #region header -->
+      <header class="header">
+        <div class="header-top">
+          <img src="./images/header/img-1.gif" alt="" />
+        </div>
+        <div class="header-center">
+          <div class="header-center-wrapper">
+            <div class="header-center-logo">
+              <a href="index.html"
+                ><img src="./images/svg/logo.svg" alt=""
+              /></a>
+            </div>
+
+            <div class="header-center-search">
+              <img src="./images/svg/search.svg" alt="" />
+              <input type="text" name="search" placeholder="جستجو" />
+            </div>
+          </div>
+
+          <div class="header-center-register">
+            <a href="./login.html" class="header-center-register-link">
+              <img src="./images/svg/arrow-left.svg" alt="" />
+              ورود
+              <span></span>
+              ثبت نام
+            </a>
+            <span></span>
+            <a href="#" class="header-center-register-cart">
+              <img src="./images/svg/header-basket.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom-right">
+            <nav>
+              <div>
+                <a href="#" class="activeMenu">
+                  <img src="./images/svg/bars.svg" alt="" />
+                  دسته‌بندی کالا</a
+                >
+              </div>
+              <div>
+                <span></span>
+              </div>
+              <div>
+                <a href="./incredible-offers.html">
+                  <img src="./images/svg/amazing-nav.svg" alt="" />
+                  شگفت انگیزها</a
+                >
+              </div>
+              <div>
+                <a href="#">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24.00 24.00"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#999B9F"
+                    stroke="#000000"
+                    stroke-width="0.00024000000000000003"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M12 2a6 6 0 0 1 6 6v1h4v2h-1.167l-.757 9.083a1 1 0 0 1-.996.917H4.92a1 1 0 0 1-.996-.917L3.166 11H2V9h4V8a6 6 0 0 1 6-6zm1 11h-2v4h2v-4zm-4 0H7v4h2v-4zm8 0h-2v4h2v-4zm-5-9a4 4 0 0 0-3.995 3.8L8 8v1h8V8a4 4 0 0 0-3.8-3.995L12 4z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  سوپر مارکت</a
+                >
+              </div>
+              <div>
+                <a href="#">
+                  <img src="./images/svg/giftcard.svg" alt="" />
+                  کارت هدیه</a
+                >
+              </div>
+              <div>
+                <a href="#">
+                  <img src="./images/svg/hot.svg" alt="" />
+                  پرفروش‌ترین‌ها</a
+                >
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+
+              <div>
+                <a href="#">
+                  <img src="./images/svg/discount.svg" alt="" />
+                  تخفیف‌ها و پیشنهادها</a
+                >
+              </div>
+              <div>
+                <span></span>
+                <a href="#"> سوالی دارید؟</a>
+              </div>
+              <div>
+                <a href="#"> در دیجی‌کالا بفروشید!</a>
+              </div>
+            </nav>
+          </div>
+          <div class="header-bottom-left-cities">
+            <button class="header-bottom-left-cities-button" id="open-modal">
+              <img src="./images/svg/location.svg" alt="" />
+              <div>ارسال به تهران، تهران</div>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-content-title">
+            <h2>انتخاب شهر</h2>
+            <span id="close-modal" class="close-button">&times;</span>
+          </div>
+
+          <input
+            class="modal-content-input"
+            type="text"
+            placeholder="جستجو در استان‌ها و شهرستان‌های ایران"
+          />
+          <p class="modal-content-detail">
+            برای مشاهده تخفیف‌ها و کالا‌های قابل ارسال به شهرتان، آن را انتخاب
+            کنید.
+          </p>
+          <h2>شهرهای پر تکرار</h2>
+          <div class="modal-content-all-cities">
+            <div class="modal-content-all-city">تهران</div>
+            <div class="modal-content-all-city">اصفهان</div>
+            <div class="modal-content-all-city">مشهد</div>
+            <div class="modal-content-all-city">شیراز</div>
+            <div class="modal-content-all-city">ساری</div>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion header -->
+
+      <!-- #region story -->
+      <div class="story">
+        <div class="story-center">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-1.jpg" alt="" />
+                  <h6>قهوه‌ خوری نئوکلاسیک</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-2.jpg" alt="" />
+                  <h6>تکراری نمیشه</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-3.jpg" alt="" />
+                  <h6>بهترین گوشی زیر 10 تومن؟</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-4.jpg" alt="" />
+                  <h6>دنبال ضد آفتاب بیرنگ بودی؟</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-5.jpg" alt="" />
+                  <h6>خرید منطقی بدون تردید ...</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-6.jpg" alt="" />
+                  <h6>بادز اف ای بهتر از بادز ۲ پرو!</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-7.jpg" alt="" />
+                  <h6>کلیپری که عاشقش شدم</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-8.jpg" alt="" />
+                  <h6>دوست جدید من 🤖</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-9.jpg" alt="" />
+                  <h6>واسه نجات سوت بزن!</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-10.jpg" alt="" />
+                  <h6>زود،تند،سریع!!!</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-11.jpg" alt="" />
+                  <h6>بررسی کامل 14t</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-12.jpg" alt="" />
+                  <h6>آنباکس اپل واچ سری ۱۰</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-13.jpg" alt="" />
+                  <h6>
+                    معرفی کوتاه سه پایه نگهدارنده گوشی موبایل یونیمات مدل D909
+                  </h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-14.jpg" alt="" />
+                  <h6>اردک تک تک...!</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-15.jpg" alt="" />
+                  <h6>اهل مطالعه‌ای!؟😎❤️ ببین ویدیو رو.</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-16.jpg" alt="" />
+                  <h6>حصیری متفاوت</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img src="./images/story/img-17.jpg" alt="" />
+                  <h6>با دستگاه تصفیه خداحافظی کن👋</h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion story -->
+
+      <!-- #region slider -->
+      <div class="slider">
+        <!-- Swiper -->
+        <div class="swiper mySlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-4.gif" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-5.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-6.webp" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-8.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-9.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-10.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-11.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider/slide-12.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- #endregion slider -->
+
+      <!-- #region category -->
+      <div class="category">
+        <div class="category-center">
+          <div class="category-center-item">
+            <img src="./images/category/image-1.png" alt="" />
+            <h6>دریافت وام</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/image-2.png" alt="" />
+            <h6>دیجی‌استایل</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/img-3.png" alt="" />
+            <h6>سوپرمارکت دیجی‌کالا</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/img-4.png" alt="" />
+            <h6>بلک فرایدی</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/img-5.png" alt="" />
+            <h6>خرید چکی</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/img-6.png" alt="" />
+            <h6>طلای دیجیتال</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/img-7.png" alt="" />
+            <h6>سوپرمارکت پرتخفیف</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/img-8.png" alt="" />
+            <h6>207 ببر!</h6>
+          </div>
+          <div class="category-center-item">
+            <img src="./images/category/img-9.png" alt="" />
+            <h6>خرید موبایل کارکرده</h6>
+          </div>
+          <div class="category-center-item">
+            <div class="moreItem">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <h6>بیشتر</h6>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion category -->
+
+      <!-- #region amazing -->
+      <div class="amazing">
+        <div class="amazing-center">
+          <!-- Swiper -->
+          <div class="swiper myAmazing">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide transparent">
+                <div class="swiper-slide-item">
+                  <img class="img-1" src="./images/svg/amazing.svg" alt="" />
+                  <div class="clock">
+                    <div class="hours">۰۱</div>
+                    <div class="colon">:</div>
+                    <div class="minutes">۵۸</div>
+                    <div class="colon">:</div>
+                    <div class="seconds">۴۰</div>
+                  </div>
+                  <img class="img-2" src="./images/svg/smile.svg" alt="" />
+                  <div class="swiper-slide-item-observe">
+                    <a href="incredible-offers.html">
+                      مشاهده همه
+                      <img src="./images/svg/arrow-left-new.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide radiusAmazingFirst">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-1.jpg"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    گوشی موبایل نوکیا مدل 110 2023 دو سیم کارت - مونتاژ ایران
+                    تحت لیسانس نوکیا
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۱,۱۲۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۶٪</div>
+                  </div>
+                  <div class="discount">۱,۱۹۹,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-2.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    گوشی موبایل وکال مدل V1 دو سیم کارت ظرفیت 128 گیگابایت و رم
+                    4 گیگابایت
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۵,۰۶۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۹٪</div>
+                  </div>
+                  <div class="discount">۵,۵۶۷,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-3.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    گوشی موبایل سامسونگ مدل Galaxy M14 4G دو سیم کارت ظرفیت 64
+                    گیگابایت و رم 4 گیگابایت - اکتیو
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۶,۸۹۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۷٪</div>
+                  </div>
+                  <div class="discount">۷,۳۹۱,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-4.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>گوشی موبایل آلکاتل مدل 1069 دو سیم‌ کارت</h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۸۲۵,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۶٪</div>
+                  </div>
+                  <div class="discount">۸۸۲,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-5.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    گوشی موبایل آنر مدل X6b دو سیم کارت ظرفیت 128 گیگابایت و رم
+                    6 گیگابایت
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۱,۱۲۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۶٪</div>
+                  </div>
+                  <div class="discount">۱,۱۹۹,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-6.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>هندزفری تسکو مدل th 5072</h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۹۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۲۶٪</div>
+                  </div>
+                  <div class="discount">۱۳۴,۳۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-7.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>هدفون بلوتوثی اکسیژن مدل E10</h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۴۹۰,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۲۰٪</div>
+                  </div>
+                  <div class="discount">۶۱۰,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-8.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>ساعت هوشمند ورنا مدل Watch 4 Pro With 7 Bands</h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۱,۴۹۵,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۲۹٪</div>
+                  </div>
+                  <div class="discount">۲,۰۹۸,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-9.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    ساعت هوشمند اپل مدل Series 10 42mm Aluminum بند سیلیکونی،
+                    محاسبه کالری، سنسور اکسیژن خون، شمارنده ضربان قلب، پشتیبانی
+                    از Siri، امکان شخصی سازی واچ فیس، ضد آب
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۲۴,۸۹۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۴٪</div>
+                  </div>
+                  <div class="discount">۲۶,۰۰۰,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-10.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    لپ تاپ 15.6 اینچی لنوو مدل IdeaPad Slim 3 15IRU8-i3
+                    1305U-8GB LPDDR5-256GB SSD-TN
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۱۹,۶۹۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۱۰٪</div>
+                  </div>
+                  <div class="discount">۲۱,۷۹۵,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-11.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    لپ تاپ 15.6 اینچی لنوو مدل LOQ 15IAX9-i5 12450HX-12GB
+                    DDR5-512GB SSD-RTX2050-FHD
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۴۶,۵۹۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۵٪</div>
+                  </div>
+                  <div class="discount">۴۹,۲۹۹,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item-product">
+                  <img
+                    src="./images/amazing/img-12.webp"
+                    class="amazing-image"
+                    alt=""
+                  />
+                  <h6>
+                    لپ تاپ 15.6 اینچی ایسوس مدل Vivobook X1502ZA-EJ2233-i3
+                    1220P-8GB DDR4-512GB SSD-TN
+                  </h6>
+                  <div class="price">
+                    <div class="price-container">
+                      <div>۲۳,۴۹۹,۰۰۰</div>
+                      <img src="./images/svg/toman.svg" alt="" />
+                    </div>
+                    <div class="price-discount">۵٪</div>
+                  </div>
+                  <div class="discount">۲۴,۷۹۵,۰۰۰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="amazing-last-slide">
+                  <a
+                    class="amazing-last-slide-link"
+                    href="incredible-offers.html"
+                  >
+                    <div class="amazing-last-slide-circle">
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="width: 20px; height: 20px; fill: #3588c0"
+                        width="24"
+                        height="24"
+                      >
+                        <defs>
+                          <symbol
+                            id="arrowLeft"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M11.293 19.707l1.414-1.414L7.414 13H20v-2H7.414l5.293-5.293-1.414-1.414-7 7a1 1 0 000 1.414l7 7z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </symbol>
+                        </defs>
+                        <g>
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.293 19.707l1.414-1.414L7.414 13H20v-2H7.414l5.293-5.293-1.414-1.414-7 7a1 1 0 000 1.414l7 7z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="amazing-last-slide-text">مشاهده همه</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion amazing -->
+
+      <!-- #region supermarket -->
+      <div class="supermarket">
+        <div class="supermarket-center">
+          <a href="#" class="supermarket-center-link">
+            <div class="supermarket-center-link-right">
+              <img
+                src="./images/supermarket/fresh.png"
+                class="supermarket-center-img-1"
+                alt=""
+              />
+              <img
+                src="./images/svg/fresh-incredible-offer.svg"
+                class="supermarket-center-img-2"
+                alt=""
+              />
+              <div class="supermarket-center-discount">تا ۶۵٪ تخفیف</div>
+            </div>
+
+            <div class="supermarket-center-link-left">
+              <a href="#">
+                <div class="supermarket-center-link-left-circle">
+                  <img src="./images/supermarket/img-1.jpg" alt="" />
+                  <span>۶۰%</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="supermarket-center-link-left-circle">
+                  <img src="./images/supermarket/img-2.jpg" alt="" />
+                  <span>۵۰%</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="supermarket-center-link-left-circle">
+                  <img src="./images/supermarket/img-3.jpg" alt="" />
+                  <span>۴۵%</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="supermarket-center-link-left-circle">
+                  <img src="./images/supermarket/img-4.jpg" alt="" />
+                  <span>۲۰%</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="supermarket-center-link-left-circle">
+                  <img src="./images/supermarket/img-5.jpg" alt="" />
+                  <span>۴۵%</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="supermarket-center-link-left-circle">
+                  <img src="./images/supermarket/img-6.webp" alt="" />
+                  <span>۸۳%</span>
+                </div>
+              </a>
+              <div class="supermarket-center-link-left-more">
+                <span>بیش از ۲۰۰ کالا</span>
+                <div>
+                  <img src="./images/svg/arrow-left-green.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- #endregion supermarket -->
+
+      <!-- #region grouping -->
+      <div class="grouping">
+        <div class="grouping-center">
+          <div class="grouping-center-image">
+            <img src="./images/grouping/img-1.png" alt="" />
+          </div>
+          <div class="grouping-center-image">
+            <img src="./images/grouping/img-2.png" alt="" />
+          </div>
+          <div class="grouping-center-image">
+            <img src="./images/grouping/img-3.png" alt="" />
+          </div>
+          <div class="grouping-center-image">
+            <img src="./images/grouping/img-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- #endregion grouping -->
+
+      <!-- #region shopping-category -->
+      <div class="shopping-category">
+        <h3 class="shopping-category-center-title">خرید بر اساس دسته بندی</h3>
+        <div class="shopping-category-center">
+          <div class="shopping-category-center-row">
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-1.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <!-- 8888 -->
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-2.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">
+                  کالای دیجیتال
+                </p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-3.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">
+                  کتاب، لوازم تحریر و هنر
+                </p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-4.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">
+                  خانه و آشپزخانه
+                </p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-5.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">
+                  لوازم خانگی برقی
+                </p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-6.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">مد و پوشاک</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-7.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">طلا و نقره</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-8.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">
+                  آرایشی بهداشتی
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- ****** -->
+          <div class="shopping-category-center-row">
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-9.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-10.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-11.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-12.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-13.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-14.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-15.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <div class="shopping-category-center-row-item">
+              <a href="#">
+                <div>
+                  <img
+                    class="shopping-category-center-row-item-image"
+                    src="./images/shopping-category/image-16.png"
+                    alt="mobile"
+                  />
+                </div>
+                <p class="shopping-category-center-row-item-text">موبایل</p>
+              </a>
+            </div>
+            <!-- first -->
+          </div>
+
+          <!-- ***** -->
+        </div>
+      </div>
+      <!-- #endregion shopping-category -->
+
+      <!-- #region first-recommend -->
+      <div class="first-recommend">
+        <div class="first-recommend-center">
+          <a href="#" class="first-recommend-center-link">
+            <div class="first-recommend-center-link-item">
+              <img
+                class="first-recommend-center-link-item-img"
+                src="./images/first-recommend/img-2.png"
+                alt=""
+              />
+            </div>
+          </a>
+          <a href="#" class="first-recommend-center-link">
+            <div class="first-recommend-center-link-item">
+              <img
+                class="first-recommend-center-link-item-img"
+                src="./images/first-recommend/img-1.gif"
+                alt=""
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- #endregion first-recommend -->
+
+      <!-- #region popular-brands -->
+      <div class="popular-brands">
+        <div class="popular-brands-center">
+          <div class="popular-brands-center-top">
+            <div class="popular-brands-center-top-img">
+              <img src="./images/svg/star.svg" alt="" />
+            </div>
+            <p class="popular-brands-center-top-text">محبوب‌ترین برندها</p>
+          </div>
+          <!-- bottom -->
+          <div class="popular-brands-center-bottom">
+            <!-- Swiper -->
+            <div class="swiper myPopularBrands">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-1.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <!-- ****** -->
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-2.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-3.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <!-- ***** -->
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-4.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-5.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-6.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-7.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-8.jpg" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-9.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-10.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-11.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-12.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-13.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-14.jpg" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-15.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-16.jpg" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-17.jpg" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-18.jpg" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div>
+                      <img src="./images/popular-brands/img-19.jpg" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- end swiper -->
+          </div>
+        </div>
+      </div>
+      <!-- #endregion popular-brands -->
+
+      <!-- #region second-recommend -->
+      <div class="second-recommend">
+        <div class="second-recommend-center">
+          <a href="#" class="second-recommend-center-link">
+            <div class="second-recommend-center-link-item">
+              <img
+                class="second-recommend-center-link-item-img"
+                src="./images/second-recommend/img-1.gif"
+                alt=""
+              />
+            </div>
+          </a>
+          <a href="#" class="second-recommend-center-link">
+            <div class="second-recommend-center-link-item">
+              <img
+                class="second-recommend-center-link-item-img"
+                src="./images/second-recommend/img-2.png"
+                alt=""
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- #endregion second-recommend -->
+
+      <!-- #region digital -->
+      <div class="digital">
+        <div class="digitl-center">
+          <div class="digitl-center-item borderLess">
+            <div class="digitl-center-item-top">
+              <h1>کیف و کاور گوشی</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="digitl-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/digital/img-1.png" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/digital/img-2.png" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/digital/img-3.png" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/digital/img-4.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="digitl-center-item borderLess">
+            <div class="digitl-center-item-top">
+              <h1>گوشی موبایل</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="digitl-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/digital/img-5.jpg" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/digital/img-6.jpg" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/digital/img-7.jpg" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/digital/img-8.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="digitl-center-item borderLess">
+            <div class="digitl-center-item-top">
+              <h1>هدفون، هدست و هندزفری</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="digitl-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/digital/img-9.jpg" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/digital/img-10.jpg" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/digital/img-11.jpg" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/digital/img-12.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="digitl-center-item borderLess">
+            <div class="digitl-center-item-top">
+              <h1>لپ تاپ و الترابوک</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="digitl-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/digital/img-13.jpg" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/digital/img-14.jpg" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/digital/img-15.jpg" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/digital/img-16.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion digital -->
+
+      <!-- #region digiclub -->
+      <div class="digiclub">
+        <div class="digiclub-center">
+          <a href="#">
+            <div class="digiclub-center-svg">
+              <img src="./images/svg/digiclub.svg" alt="" />
+            </div>
+          </a>
+
+          <div class="digiclub-center-items">
+            <a href="#" class="digiclub-center-link">
+              <img
+                class="digiclub-center-link-icon"
+                src="./images/svg/wheel.svg"
+                alt=""
+              />
+              <span class="digiclub-center-link-text">چرخ و بخت</span>
+              <img
+                class="digiclub-center-link-img"
+                src="./images/digiclub/wheel-spinner.png"
+                alt=""
+              />
+            </a>
+
+            <a href="#" class="digiclub-center-link">
+              <img
+                class="digiclub-center-link-icon"
+                src="./images/svg/missions.svg"
+                alt=""
+              />
+              <span class="digiclub-center-link-text">ماموریت ها</span>
+              <img
+                class="digiclub-center-link-img"
+                src="./images/digiclub/missions.png"
+                alt=""
+              />
+            </a>
+
+            <a href="#" class="digiclub-center-link">
+              <img
+                class="digiclub-center-link-icon"
+                src="./images/svg/prizes.svg"
+                alt=""
+              />
+              <span class="digiclub-center-link-text">جایزه ها</span>
+              <img
+                class="digiclub-center-link-img"
+                src="./images/digiclub/awards.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion digiclub -->
+
+      <!-- #region favorite -->
+      <div class="favorites">
+        <div class="favorites-center">
+          <div class="favorites-center-top">
+            <div class="favorites-center-top-item">
+              <h1>پرفروش‌ترین‌ کالاها</h1>
+              <a href="#"><h2>مشاهده همه</h2></a>
+            </div>
+          </div>
+          <div class="favorites-center-bottom">
+            <div class="swiper myFavorite">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-1.png" alt="" />
+                      <h2>۱</h2>
+                      <p>پنیر سفید ایرانی پگاه - 400 گرم</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-2.png" alt="" />
+                      <h2>۲</h2>
+                      <p>کنسرو لوبیا چیتی در سس گوجه فرنگی اصالت - 380 گرم</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-3.png" alt="" />
+                      <h2>۳</h2>
+                      <p>
+                        گوشی موبایل شیائومی مدل Redmi Note 13 4G دو سیم کارت
+                        ظرفیت 256 گیگابایت و رم 8 گیگابایت
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ***** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-4.webp" alt="" />
+                      <h2>۴</h2>
+                      <p>کالباس 60 درصد قارچ و مرغ مهيا پروتئين - 250 گرم</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-5.webp" alt="" />
+                      <h2>۵</h2>
+                      <p>
+                        لامپ 12 وات نوردلایت مدل حبابی پایه E27 مجموعه دو عددی
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-6.webp" alt="" />
+                      <h2>۶</h2>
+                      <p>
+                        روغن مایع آفتابگردان حاوی ویتامین دی و ای لادن - 2.7
+                        کیلوگرم
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ****** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-7.webp" alt="" />
+                      <h2>۷</h2>
+                      <p>
+                        نوار دستگاه تست قند خون ایزی گلوکو مدل اتوکدینگ بسته 50
+                        عددی
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-8.webp" alt="" />
+                      <h2>۸</h2>
+                      <p>کالباس 90 درصد گوشت قرمز مهيا پروتئين - 250 گرم</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-9.webp" alt="" />
+                      <h2>۹</h2>
+                      <p>کنسرو ماهی تن در روغن گالکسی - 180 گرم</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ***** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-10.webp" alt="" />
+                      <h2>۱۰</h2>
+                      <p>
+                        گوشی موبایل نوکیا مدل 105 2023 دو سیم‌ کارت - مونتاژ
+                        ایران تحت لیسانس نوکیا
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-11.webp" alt="" />
+                      <h2>۱۱</h2>
+                      <p>کالباس 90 درصد گوشت مرغ مهيا پروتئين - 250 گرم</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-12.webp" alt="" />
+                      <h2>۱۲</h2>
+                      <p>مرغ کامل رتبه A سمین - 1400 گرم</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ********** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-13.webp" alt="" />
+                      <h2>۱۳</h2>
+                      <p>
+                        لامپ 7 وات نوردلایت مدل اشکی پایه E14 مجموعه دو عددی
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-14.webp" alt="" />
+                      <h2>۱۴</h2>
+                      <p>پوشک کودک مولفیکس مدل چسبی سایز 5 بسته 28 عددی</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-15.webp" alt="" />
+                      <h2>۱۵</h2>
+                      <p>خامه فرادما پگاه مقدار 200 میلی لیتر</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ******** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-16.webp" alt="" />
+                      <h2>۱۶</h2>
+                      <p>کافی میکس 3×1 تیمز بسته 20 عددی</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-17.webp" alt="" />
+                      <h2>۱۷</h2>
+                      <p>روغن سرخ کردنی بهار الماس - 3 لیتر</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/favorites/img-18.webp" alt="" />
+                      <h2>۱۸</h2>
+                      <p>
+                        پاوربانک شیائومی مدل Redmi ظرفیت 20000 میلی آمپرساعت به
+                        همراه کابل تبدیل microUSB
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ********** -->
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion favorite -->
+
+      <!-- #region accessorie -->
+      <div class="accessorie">
+        <div class="accessorie-center">
+          <div class="accessorie-center-item borderLess">
+            <div class="accessorie-center-item-top">
+              <h1>ساعت هوشمند</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="accessorie-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/accessorie/img-1.jpg" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/accessorie/img-2.jpg" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/accessorie/img-3.jpg" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/accessorie/img-4.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="accessorie-center-item borderLess">
+            <div class="accessorie-center-item-top">
+              <h1>ساعت عقربه ای مردانه</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="accessorie-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/accessorie/img-5.jpg" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/accessorie/img-6.jpg" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/accessorie/img-7.jpg" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/accessorie/img-8.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="accessorie-center-item borderLess">
+            <div class="accessorie-center-item-top">
+              <h1>تی شرت مردانه</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="accessorie-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/accessorie/img-9.png" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/accessorie/img-10.jpg" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/accessorie/img-11.jpg" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/accessorie/img-12.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="accessorie-center-item borderLess">
+            <div class="accessorie-center-item-top">
+              <h1>سایر لوازم خودرو</h1>
+              <h2>بر اساس سلیقه شما</h2>
+            </div>
+            <div class="accessorie-center-item-bottom">
+              <a href="#" class="borderBottom"
+                ><img src="./images/accessorie/img-13.jpg" alt=""
+              /></a>
+              <a href="#" class="borderBottom borderRight"
+                ><img src="./images/accessorie/img-14.jpg" alt=""
+              /></a>
+              <a href="#" class=""
+                ><img src="./images/accessorie/img-15.jpg" alt=""
+              /></a>
+              <a href="#" class="borderRight"
+                ><img src="./images/accessorie/img-16.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion accessorie -->
+
+      <!-- #region banner -->
+      <div class="banner">
+        <div class="banner-center"></div>
+      </div>
+      <!-- #endregion banner -->
+
+      <!-- #region selected-discount -->
+      <div class="selected-discount">
+        <div class="selected-discount-center">
+          <div class="selected-discount-center-top">
+            <div class="selected-discount-center-top-svg">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 24px; height: 24px; fill: #dc143c"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="discount"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 4a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-.707-.293l-4-4A1 1 0 011 15V9a1 1 0 01.293-.707l4-4A1 1 0 016 4h16zm-1 2H6.414L3 9.414v5.172L6.414 18H21V6zm-6 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm2.5 6.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM10 12a3 3 0 11-6 0 3 3 0 016 0zm-4 0a1 1 0 102 0 1 1 0 00-2 0zm12.848-3.47l-5 8-1.696-1.06 5-8 1.696 1.06z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </symbol>
+                </defs>
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 4a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-.707-.293l-4-4A1 1 0 011 15V9a1 1 0 01.293-.707l4-4A1 1 0 016 4h16zm-1 2H6.414L3 9.414v5.172L6.414 18H21V6zm-6 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm2.5 6.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM10 12a3 3 0 11-6 0 3 3 0 016 0zm-4 0a1 1 0 102 0 1 1 0 00-2 0zm12.848-3.47l-5 8-1.696-1.06 5-8 1.696 1.06z"
+                    clip-rule="evenodd"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <h3>منتخب محصولات تخفیف و حراج</h3>
+          </div>
+          <div class="selected-discount-center-bottom">
+            <!-- **** -->
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-1.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/immg-2.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-3.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-4.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-5.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-leftless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-6.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-7.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-8.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-9.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-10.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a href="#" class="selected-discount-link">
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-11.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-leftless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-12.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-bottomless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-13.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-bottomless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-14.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-bottomless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-15.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-bottomless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-16.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-bottomless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-11.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <a
+              href="#"
+              class="selected-discount-link selected-discount-border-bottomless selected-discount-border-leftless"
+            >
+              <div class="selected-discount-img-container">
+                <img
+                  class="selected-discount-img"
+                  src="./images/selected-discount/img-5.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="selected-discount-price-container">
+                <div class="selected-discount-price-circle">۹۹٪</div>
+                <div class="selected-discount-final-price-container">
+                  <div class="selected-discount-final-price">۹۹,۰۰۰</div>
+                  <img src="./images/svg/toman.svg" alt="" />
+                </div>
+              </div>
+              <div class="selected-discount-old-price">۹۰۰,۰۰۰</div>
+            </a>
+            <!-- ***** -->
+          </div>
+        </div>
+      </div>
+      <!-- #endregion selected-discount -->
+
+      <!-- #region hottest -->
+      <div class="hottest">
+        <div class="hottest-center">
+          <div class="hottest-center-top">
+            <div class="hottest-center-top-item">
+              <div>
+                <img src="./images/svg/fire.svg" alt="" />
+                <h1>داغ ترین چند ساعت گذشته</h1>
+              </div>
+              <a href="#"><h2>مشاهده همه</h2></a>
+            </div>
+          </div>
+          <div class="hottest-center-bottom">
+            <div class="swiper myFavorite">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-1.webp" alt="" />
+                      <h2>۱</h2>
+                      <p>ساعت مچی عقربه‌ای مردانه امپریو آرمانی مدل AR11208</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-2.webp" alt="" />
+                      <h2>۲</h2>
+                      <p>موتور سیکلت احسان مدل RD 125 حجم 125 سی سی سال 1403</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-3.webp" alt="" />
+                      <h2>۳</h2>
+                      <p>پاوربانک تسکو مدل TP 871 ظرفیت 10000 میلی آمپر ساعت</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ***** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-4.webp" alt="" />
+                      <h2>۴</h2>
+                      <p>اسپیکر بلوتوثی قابل حمل شیائومی مدل Sound Pocket</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-5.webp" alt="" />
+                      <h2>۵</h2>
+                      <p>لامپ ال ای دی 8 وات سایروکس مدل دور شیشه ای</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-6.webp" alt="" />
+                      <h2>۶</h2>
+                      <p>روغن موتور فلومکس مدل اولترا تک 0w20 حجم 5 لیتر</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ****** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-7.webp" alt="" />
+                      <h2>۷</h2>
+                      <p>لوستر سقفی شاهان تک مدل E316/2</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-8.webp" alt="" />
+                      <h2>۸</h2>
+                      <p>
+                        فلش مموری پی ان وای مدل DUO LINK USB 3.1 Type-C OTG
+                        ظرفیت 64 گیگابایت
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-9.webp" alt="" />
+                      <h2>۹</h2>
+                      <p>
+                        لامپ 9 وات نوردلایت مدل حبابی پایه E27 مجموعه دو عددی
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ***** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-10.webp" alt="" />
+                      <h2>۱۰</h2>
+                      <p>
+                        ادو پرفیوم مردانه فراگرنس پرشیا 116 مدل کاپیتان بلک حجم
+                        50 میلی لیتر
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-11.webp" alt="" />
+                      <h2>۱۱</h2>
+                      <p>سشوار دیواری جی دبلیو مدل GW-6597</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-12.webp" alt="" />
+                      <h2>۱۲</h2>
+                      <p>لامپ اس ام دی 20 وات سایروکس مدل A80 پایه E27</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ********** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-13.webp" alt="" />
+                      <h2>۱۳</h2>
+                      <p>سطل زباله ماشین این چنتا مدل Earth</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-14.webp" alt="" />
+                      <h2>۱۴</h2>
+                      <p>اس اس دی اینترنال فدک مدل B5 ظرفیت 128 گیگابایت</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-15.webp" alt="" />
+                      <h2>۱۵</h2>
+                      <p>
+                        گوشی موبایل آنر مدل X9a دو سیم کارت ظرفیت 256 گیگابایت و
+                        رم 8 گیگابایت
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ******** -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-16.webp" alt="" />
+                      <h2>۱۶</h2>
+                      <p>
+                        سیستم خنک کننده بادی دیپ کول مدل GAMMAXX AG400 PLUS
+                        LGA1700
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-17.webp" alt="" />
+                      <h2>۱۷</h2>
+                      <p>
+                        دستمال نظافت خودرو کلینتون مدل سوپر میکروفایبر کد 80030
+                      </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="swiper-slide-item-product">
+                      <img src="./images/hottest/img-18.webp" alt="" />
+                      <h2>۱۸</h2>
+                      <p>
+                        ادو پرفیوم مردانه فراگرنس پرشیا 116 مدل کرید اونتوس حجم
+                        100 میلی لیتر
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ********** -->
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion hottest -->
+
+      <!-- #region article-->
+      <div class="article">
+        <div class="article-center">
+          <div class="article-center-top">
+            <div class="article-center-top-title">خواندنی‌ها</div>
+
+            <span class="article-center-top-container">
+              <a href="#" class="article-center-top-link">
+                <span class="article-center-top-link-more"
+                  >مطالب بیشتر در دیجی‌کالا مگ</span
+                >
+                <div class="article-center-top-link-image">
+                  <img src="" alt="" />
+                </div>
+              </a>
+            </span>
+          </div>
+          <!-- end of top -->
+          <div class="article-center-bottom">
+            <a href="#" class="article-center-bottom-link">
+              <div class="article-center-bottom-image">
+                <img src="./images/article/img-1.jpg" alt="" />
+              </div>
+              <div class="article-center-bottom-text">
+                اولین مسابقه نقد کتاب دیجی‌کالا؛ کتاب نقد کن، کد تخفیف ببر!
+              </div>
+            </a>
+            <!-- end of first a -->
+            <a href="#" class="article-center-bottom-link">
+              <div class="article-center-bottom-image">
+                <img src="./images/article/img-2.jpeg" alt="" />
+              </div>
+              <div class="article-center-bottom-text">
+                علت یخ زدن داخل یخچال بدون برفک چیست؟
+              </div>
+            </a>
+            <a href="#" class="article-center-bottom-link">
+              <div class="article-center-bottom-image">
+                <img src="./images/article/img-3.jpg" alt="" />
+              </div>
+              <div class="article-center-bottom-text">
+                فواید رزماری و روش نگهداری از گیاه رزماری
+              </div>
+            </a>
+            <a href="#" class="article-center-bottom-link">
+              <div class="article-center-bottom-image">
+                <img src="./images/article/img-4.jpg" alt="" />
+              </div>
+              <div class="article-center-bottom-text">
+                بررسی انواع پولیپ روده و رژیم غذایی مناسب آن
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion article -->
+
+      <!-- #region footer-->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top-center">
+            <div class="footer-top-first">
+              <div class="footer-top-first-logo">
+                <img src="./images/svg/logo.svg" alt="" />
+              </div>
+              <button type="button" class="footer-top-first-button">
+                <div class="footer-top-first-button-container">
+                  <span class="footer-top-first-button-text"
+                    >بازگشت به بالا</span
+                  >
+                  <div class="footer-top-first-button-svg">
+                    <img src="./images/svg/arrow-up.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+            </div>
+            <!-- end of first -->
+            <div class="footer-top-second">
+              <p class="footer-top-second-text">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+              <div class="footer-top-second-text">|</div>
+              <p class="footer-top-second-text">۰۲۱-۹۱۰۰۰۱۰۰</p>
+              <div class="footer-top-second-text">|</div>
+              <p class="footer-top-second-text">
+                ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم
+              </p>
+            </div>
+            <!-- end of second -->
+            <div class="footer-top-third">
+              <a href="#" class="footer-top-third-link">
+                <div class="footer-top-third-container">
+                  <img
+                    class="footer-top-third-image"
+                    src="./images/footer-svg/express-delivery.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="footer-top-third-text">اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس</p>
+              </a>
+              <a href="#" class="footer-top-third-link">
+                <div class="footer-top-third-container">
+                  <img
+                    class="footer-top-third-image"
+                    src="./images/footer-svg/cash-on.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="footer-top-third-text">امکان پرداخت در محل</p>
+              </a>
+              <a href="#" class="footer-top-third-link">
+                <div class="footer-top-third-container">
+                  <img
+                    class="footer-top-third-image"
+                    src="./images/footer-svg/support.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="footer-top-third-text">۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ</p>
+              </a>
+              <a href="#" class="footer-top-third-link">
+                <div class="footer-top-third-container">
+                  <img
+                    class="footer-top-third-image"
+                    src="./images/footer-svg/days-return.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="footer-top-third-text">هفت روز ضمانت بازگشت کالا</p>
+              </a>
+              <a href="#" class="footer-top-third-link">
+                <div class="footer-top-third-container">
+                  <img
+                    class="footer-top-third-image"
+                    src="./images/footer-svg/original-products.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="footer-top-third-text">ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ</p>
+              </a>
+            </div>
+            <!-- end of third -->
+            <div class="footer-top-fourth">
+              <div class="footer-top-fourth-container">
+                <p class="footer-top-fourth-title">با دیجی‌کالا</p>
+                <a href="#" class="footer-top-fourth-link"
+                  >اتاق خبر دیجی‌کالا</a
+                >
+                <a href="#" class="footer-top-fourth-link">فروش در دیجی‌کالا</a>
+                <a href="#" class="footer-top-fourth-link">فرصت‌های شغلی</a>
+                <a href="#" class="footer-top-fourth-link"
+                  >گزارش تخلف در دیجی‌کالا</a
+                >
+                <a href="#" class="footer-top-fourth-link">تماس با دیجی‌کالا</a>
+                <a href="#" class="footer-top-fourth-link">درباره دیجی‌کالا</a>
+              </div>
+              <!-- ***** -->
+              <div class="footer-top-fourth-container">
+                <p class="footer-top-fourth-title">خدمات مشتریان</p>
+                <a href="#" class="footer-top-fourth-link"
+                  >پاسخ به پرسش‌های متداول</a
+                >
+                <a href="#" class="footer-top-fourth-link"
+                  >رویه‌های بازگرداندن کالا</a
+                >
+                <a href="#" class="footer-top-fourth-link">شرایط استفاده</a>
+                <a href="#" class="footer-top-fourth-link">حریم خصوصی</a>
+                <a href="#" class="footer-top-fourth-link">گزارش باگ</a>
+              </div>
+              <!-- ***** -->
+              <div class="footer-top-fourth-container">
+                <p class="footer-top-fourth-title">راهنمای خرید از دیجی‌کالا</p>
+                <a href="#" class="footer-top-fourth-link">نحوه ثبت سفارش</a>
+                <a href="#" class="footer-top-fourth-link">رویه ارسال سفارش</a>
+                <a href="#" class="footer-top-fourth-link">شیوه‌های پرداخت</a>
+              </div>
+              <!-- ***** -->
+              <div class="footer-top-fourth-last-child">
+                <div class="footer-top-fourth-last-child-upper-container">
+                  <h4 class="footer-top-fourth-last-child-upper-title">
+                    همراه ما باشید!
+                  </h4>
+                  <div
+                    class="footer-top-fourth-last-child-upper-container-flex"
+                  >
+                    <a href="#" class="footer-top-fourth-last-child-upper-link">
+                      <div
+                        class="footer-top-fourth-last-child-upper-svg-container"
+                      >
+                        <img
+                          class="footer-top-fourth-last-child-upper-svg"
+                          src="./images/footer-svg/instagram.svg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="#" class="footer-top-fourth-last-child-upper-link">
+                      <div lass="footer-top-fourth-upper-svg-container">
+                        <img
+                          class="footer-top-fourth-last-child-upper-svg"
+                          src="./images/footer-svg/twitter.svg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="#" class="footer-top-fourth-last-child-upper-link">
+                      <div lass="footer-top-fourth-upper-svg-container">
+                        <img
+                          class="footer-top-fourth-last-child-upper-svg"
+                          src="./images/footer-svg/linkedin.svg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="#" class="footer-top-fourth-last-child-upper-link">
+                      <div lass="footer-top-fourth-upper-svg-container">
+                        <img
+                          class="footer-top-fourth-last-child-upper-svg"
+                          src="./images/footer-svg/aparat.svg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- ***** -->
+                <div class="footer-top-fourth-last-child-downer-container">
+                  <h4 class="footer-top-fourth-last-child-downer-title">
+                    با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید
+                  </h4>
+                  <div>
+                    <form action="">
+                      <label for="email">
+                        <div>
+                          <div>
+                            <input
+                              type="text"
+                              id="email"
+                              placeholder="ایمیل شما"
+                            />
+                          </div>
+                        </div>
+                      </label>
+                      <button>
+                        <div>ثبت</div>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** -->
+            </div>
+            <!-- end of fourth -->
+            <div class="footer-top-fifth">
+              <div class="footer-top-fifth-right">
+                <div class="footer-top-fifth-right-img-container">
+                  <img
+                    class="footer-top-fifth-right-img"
+                    src="./images/footer/footerlogo2.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="footer-top-fifth-right-text">
+                  دانلود اپلیکیشن دیجی‌کالا
+                </div>
+              </div>
+              <div class="footer-top-fifth-left">
+                <div class="footer-top-fifth-left-container">
+                  <a class="footer-top-fifth-left-link" href="">
+                    <div>
+                      <img src="./images/footer-svg/cafe-bazzar.svg" alt="" />
+                    </div>
+                  </a>
+                  <a class="footer-top-fifth-left-link" href="">
+                    <div>
+                      <img src="./images/footer-svg/myket.svg" alt="" />
+                    </div>
+                  </a>
+                  <a class="footer-top-fifth-left-link" href="">
+                    <div>
+                      <img src="./images/footer-svg/sib-app.svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <a href="#" class="footer-top-fifth-left-link-more">
+                  <div>
+                    <img src="./images/footer-svg/more.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- end of fifth -->
+            <div class="footer-top-sixth">
+              <div>later</div>
+            </div>
+            <!-- end of sixth -->
+            <div class="footer-top-seventh">
+              برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع»
+              کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه
+              (فروشگاه آنلاین دیجی‌کالا) است.
+            </div>
+            <!-- end of seventh -->
+          </div>
+        </div>
+        <!-- end of top -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-container">
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digimag.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digipay.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digistyle.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digiplus.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digiclub.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/jet.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digiMehr.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/diginext.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digiexpress.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/ganjeh.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digify.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/smartech.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digikala-business.svg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img src="./images/footer-svg/digikala-service.svg" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- #endregion footer -->
+
+      <!-- #region fixed-supermarket-->
+      <button id="show-dialog">
+        <div class="fixed-supermarket">
+          <a href="#">
+            <span>سوپرمارکت</span>
+            <span>|</span>
+            <span>تنوع بالا و پرتخفیف</span>
+            <img src="./images/svg/supermarket.svg" alt="" />
+          </a>
+        </div>
+      </button>
+
+      <div id="dialog-box" class="dialog-overlay">
+        <div class="dialog-content">
+          <span id="hide-dialog" class="close-dialog">&times;</span>
+          <h2 class="fixed-supermarket-title">
+            یکی از سوپرمارکت‌های زیر را انتخاب کنید
+          </h2>
+          <p class="fixed-supermarket-text">فقط در شهرهای تهران و کرج</p>
+
+          <div class="fixed-supermarket-items">
+            <div class="fixed-supermarket-right-item">
+              <div class="fixed-supermarket-right-item-title">
+                <h2>پرتخفیف و متنوع</h2>
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="width: 24px; height: 24px; fill: #5d5d5d"
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <g>
+                    <path
+                      d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="fixed-supermarket-right-item-green-container">
+                <svg
+                  fill="#fff"
+                  height="16px"
+                  width="16px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M503.673,243.579c-5.323-6.344-12.584-10.467-20.908-12.008l-3.91-53.066c3.857-0.037,7.146-2.815,7.818-6.622
+			l1.508-8.551c1.616-9.166-0.638-18.214-6.185-24.823c-5.54-6.602-13.651-10.239-22.84-10.239h-58.854l2.865-16.245
+			c0.813-4.614-0.365-9.221-3.231-12.637c-2.838-3.382-7.105-5.322-11.707-5.322H98.524c-8.567,0-16.453,6.665-17.954,15.176
+			L54.939,254.609c-0.768,4.36,2.143,8.518,6.503,9.286c0.47,0.083,0.938,0.123,1.401,0.123c3.817,0,7.2-2.737,7.885-6.626
+			L96.36,112.025c0.169-0.957,1.401-1.927,2.163-1.927l288.702,0.001l-25.481,144.51c-0.769,4.36,2.142,8.518,6.503,9.286
+			c4.355,0.767,8.518-2.143,9.286-6.503l1.848-10.479h95.866c0.003,0,0.007,0,0.011,0s0.008,0,0.011,0
+			c6.626,0.001,12.351,2.476,16.122,6.969c2.595,3.093,4.109,6.943,4.473,11.202h-26.629c-3.891,0-7.219,2.793-7.895,6.625
+			l-3.015,17.102c-1.215,6.89,0.501,13.717,4.707,18.73c4.148,4.945,10.445,7.78,17.274,7.78h7.548l-6.22,35.273h-21.165
+			c-1.393-7.055-4.442-13.544-9.063-19.049c-8.199-9.773-20.265-15.154-33.972-15.154c-21.979,0-43.184,14.38-53.111,34.204h-3.223
+			l10.403-58.999c0.768-4.36-2.142-8.518-6.503-9.286c-4.358-0.77-8.518,2.142-9.286,6.503l-10.894,61.783H196.418
+			c-1.393-7.055-4.442-13.543-9.063-19.049c-8.2-9.773-20.265-15.154-33.973-15.154c-21.979,0-43.184,14.38-53.111,34.204
+			l-45.978-0.001l3.204-18.17h36.029c4.427,0,8.017-3.589,8.017-8.017c0-4.427-3.589-8.017-8.017-8.017H8.017
+			c-4.427,0-8.017,3.589-8.017,8.017c0,4.427,3.589,8.017,8.017,8.017h33.201l-2.865,16.245c-0.813,4.614,0.365,9.221,3.231,12.637
+			c2.838,3.382,7.105,5.322,11.707,5.322h41.774c-2.173,13.599,1.093,26.41,9.268,36.151c8.2,9.773,20.265,15.154,33.973,15.154
+			c27.284,0,53.387-22.151,58.188-49.38c0.113-0.645,0.202-1.286,0.292-1.926h162.331c-2.174,13.598,1.092,26.409,9.268,36.151
+			c8.2,9.773,20.265,15.154,33.973,15.154c27.284,0,53.387-22.151,58.188-49.38c0.113-0.645,0.202-1.286,0.292-1.926h27.525
+			c3.891,0,7.219-2.793,7.895-6.625l15.078-85.51C513.382,262.886,510.661,251.907,503.673,243.579z M382.21,230.883l9.235-52.375
+			h71.336l3.859,52.375H382.21z M472.391,160.549l-0.34,1.926h-77.78l3.204-18.171h61.681c4.367,0,8.117,1.602,10.557,4.511
+			C472.243,151.829,473.195,155.995,472.391,160.549z M180.705,365.773c-3.512,19.923-22.533,36.13-42.399,36.13
+			c-8.886,0-16.59-3.348-21.691-9.426c-5.248-6.255-7.248-14.749-5.631-23.919c3.513-19.923,22.533-36.13,42.399-36.13
+			c8.886,0,16.59,3.348,21.691,9.427C180.322,348.108,182.322,356.603,180.705,365.773z M444.756,365.773
+			c-3.513,19.923-22.533,36.13-42.399,36.13c-8.886,0-16.59-3.348-21.691-9.427c-5.248-6.255-7.248-14.749-5.631-23.919
+			c3.512-19.923,22.533-36.13,42.399-36.13c8.885,0,16.59,3.348,21.691,9.427C444.373,348.108,446.373,356.603,444.756,365.773z
+			 M490.681,299.292h-10.375v-0.001c-2.139,0-3.865-0.71-4.992-2.052c-1.169-1.394-1.596-3.397-1.2-5.64l1.848-10.477h17.923
+			L490.681,299.292z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M159.06,355.919c-2.838-3.382-7.105-5.322-11.708-5.322c-8.567,0-16.453,6.665-17.954,15.176
+			c-0.813,4.614,0.365,9.221,3.231,12.637c2.838,3.382,7.105,5.322,11.707,5.322c8.567,0,16.453-6.666,17.954-15.175
+			C163.104,363.942,161.927,359.336,159.06,355.919z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M423.111,355.919c-2.839-3.382-7.106-5.322-11.707-5.322c-8.567,0-16.453,6.665-17.953,15.175
+			c-0.813,4.615,0.363,9.221,3.23,12.638c2.838,3.382,7.105,5.322,11.707,5.322c8.567,0,16.453-6.666,17.954-15.175
+			C427.156,363.942,425.978,359.336,423.111,355.919z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M323.374,316.393H221.791c-4.427,0-8.017,3.589-8.017,8.017c0,4.427,3.589,8.017,8.017,8.017h101.583
+			c4.427,0,8.017-3.589,8.017-8.017C331.39,319.982,327.801,316.393,323.374,316.393z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M179.036,282.189H31.15c-4.427,0-8.017,3.589-8.017,8.017c0,4.427,3.588,8.017,8.017,8.017h147.886
+			c4.427,0,8.017-3.589,8.017-8.017C187.053,285.778,183.464,282.189,179.036,282.189z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M332.127,249.936l-29.68-25.653c-3.35-2.894-8.412-2.527-11.308,0.823c-2.896,3.35-2.527,8.412,0.823,11.308
+			l13.388,11.572H102.077c-4.427,0-8.017,3.589-8.017,8.017c0,4.427,3.589,8.017,8.017,8.017h198.189l-16.535,10.954
+			c-3.692,2.444-4.701,7.419-2.256,11.11c1.542,2.329,4.092,3.59,6.69,3.59c1.52,0,3.058-0.432,4.42-1.335l38.727-25.653
+			c2.092-1.384,3.413-3.668,3.573-6.172C335.045,254.009,334.025,251.575,332.127,249.936z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p>ارسال امروز</p>
+              </div>
+              <div class="fixed-supermarket-right-item-img-container">
+                <img
+                  class="fixed-supermarket-right-item-img"
+                  src="./images/fixed-supermarket/fresh-shop-basket.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="fixed-supermarket-left-item">
+              <div class="fixed-supermarket-right-item-title">
+                <h2>ارسال سریع</h2>
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="width: 16px; height: 16px; fill: #5d5d5d"
+                  width="16"
+                  height="16"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <g>
+                    <path
+                      d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="fixed-supermarket-left-item-orange-container">
+                <svg
+                  fill="#FFFFFF"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 72 72"
+                  width="64px"
+                  height="64px"
+                >
+                  <path
+                    d="M 36 12 C 22.745 12 12 22.745 12 36 C 12 49.255 22.745 60 36 60 C 49.255 60 60 49.255 60 36 C 60 22.745 49.255 12 36 12 z M 36 20 C 44.837 20 52 27.163 52 36 C 52 44.837 44.837 52 36 52 C 27.163 52 20 44.837 20 36 C 20 27.163 27.163 20 36 20 z M 36 22 C 34.343 22 33 23.343 33 25 L 33 33 L 27 33 C 25.343 33 24 34.343 24 36 C 24 37.657 25.343 39 27 39 L 36 39 C 37.657 39 39 37.657 39 36 L 39 25 C 39 23.343 37.657 22 36 22 z"
+                  />
+                </svg>
+                <p>۴۵ دقیقه‌ای</p>
+              </div>
+              <div class="fixed-supermarket-left-item-img-container">
+                <img
+                  class="fixed-supermarket-left-item-img"
+                  src="./images/fixed-supermarket/jet-shop-basket.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion fixed-supermarket-->
+
+      <!-- #region online-support-->
+      <button class="online-support">
+        <div>
+          <div>
+            <img src="./images/svg/haedphone.svg" alt="" />
+          </div>
+        </div>
+      </button>
+      <div class="online-support-card">
+        <div class="online-support-card-title"></div>
+        <p></p>
+
+        <button>
+          <div>تماس با ما</div>
+          <div>
+            <img src="" alt="" />
+          </div>
+        </button>
+      </div>
+      <!-- #endregion online-support-->
+
+      <!-- end wrapper -->
+    </div>
+    <!-- #endregion project-->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 12.5,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".mySlider", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".myAmazing", {
+        slidesPerView: 8.2,
+        spaceBetween: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".myFavorite", {
+        slidesPerView: 4,
+        spaceBetween: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      //*****
+      var swiper = new Swiper(".myBestSelling", {
+        slidesPerView: 4,
+        spaceBetween: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      //*****
+      var swiper = new Swiper(".myPopularBrands", {
+        slidesPerView: 9.5,
+        spaceBetween: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      // modal for cities
+      // Select elements
+      const openModalButton = document.getElementById("open-modal");
+      const closeModalButton = document.getElementById("close-modal");
+      const modal = document.getElementById("modal");
+
+      // Open Modal
+      openModalButton.addEventListener("click", () => {
+        modal.classList.add("show");
+      });
+
+      // Close Modal
+      closeModalButton.addEventListener("click", () => {
+        modal.classList.remove("show");
+      });
+
+      // Close Modal when clicking outside the modal content
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("show");
+        }
+      });
+      //modal for fixed supermarket
+      // Selecting Elements
+      const openDialog = document.getElementById("show-dialog");
+      const closeDialog = document.getElementById("hide-dialog");
+      const dialogOverlay = document.getElementById("dialog-box");
+
+      // Open Dialog
+      openDialog.addEventListener("click", () => {
+        dialogOverlay.classList.add("visible");
+      });
+
+      // Close Dialog
+      closeDialog.addEventListener("click", () => {
+        dialogOverlay.classList.remove("visible");
+      });
+
+      // Close Dialog when clicking outside of content
+      dialogOverlay.addEventListener("click", (e) => {
+        if (e.target === dialogOverlay) {
+          dialogOverlay.classList.remove("visible");
+        }
+      });
+    </script>
+  </body>
+</html>

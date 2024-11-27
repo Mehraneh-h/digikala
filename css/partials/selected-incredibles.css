@@ -1,0 +1,136 @@
+.selected-incredibles {
+  width: 100%;
+  height: 441px;
+  margin-bottom: 24px;
+  .selected-incredibles-center {
+    width: inherit;
+    height: inherit;
+    background-color: #ef3b51;
+    padding: 28px 0;
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .selected-incredibles-items {
+        padding: 12px 8px;
+        width: 192px;
+        height: 385px;
+        background-color: #fff;
+        border-radius: 10px;
+        .selected-incredibles-icon {
+          width: 116px;
+          height: 14px;
+          margin-bottom: 7px;
+        }
+        .selected-incredibles-img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          margin: 5px 13px;
+        }
+        .selected-incredibles-txt {
+          font-family: var(--fontFamily);
+          font-size: 13px;
+          color: #2b2b2b;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          margin-bottom: 5px;
+          font-weight: bold;
+          line-height: 30px;
+        }
+        .selected-incredibles-send {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 5px;
+            margin-bottom: 20px;
+          img {
+            width: 18px;
+            height: 18px;
+          }
+          p {
+            font-family: var(--fontFamily);
+            font-size: 10px;
+          }
+        }
+        .selected-incredibles-discount-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .selected-incredibles-discount{
+                width: 30px;
+                height: 20px;
+                line-height: 20px;
+                border-radius: 15px;
+                background-color: #ef3b51;
+                color: #fff;
+                font-family: var(--fontNumber);
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .selected-incredibles-discounted-price{
+                font-family: var(--fontNumber);
+                font-size: 17px;
+                display: flex;
+                font-weight: bold;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+        .selected-incredibles-old-price{
+            text-align: left;
+            font-size: 12px;
+            color: rgb(186, 186, 186);
+            font-family: var(--fontNumber);
+            margin-left: 20px;
+            text-decoration: line-through;
+          }
+        .selected-incredibles-timer{
+            color: #ef3b51;
+            font-family: var(--fontNumber);
+            font-size: 14px;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px;
+
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.selected-incredibles-first-item {
+  width: 192px;
+  height: 385px;
+  background-color: #ffffff00;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .selected-incredibles-first-item-top-img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  .selected-incredibles-first-item-bottom-img{
+    width: 145px;
+    height: 145px;
+  }
+}

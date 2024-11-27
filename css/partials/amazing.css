@@ -1,0 +1,171 @@
+.amazing {
+  width: 100%;
+  height: 295px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  .amazing-center {
+    background-color: crimson;
+    width: 87.99%;
+    height: 300px;
+    border-radius: 15px;
+    padding: 20px 20px 20px 0;
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 16px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .swiper-slide-item {
+        width: inherit;
+        height: inherit;
+        .img-1 {
+          width: 88px;
+          height: 88px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+        .clock {
+          width: 100%;
+          height: 30px;
+          display: flex;
+          flex-flow: row-reverse wrap;
+          justify-content: center;
+          align-items: center;
+          column-gap: 1px;
+          margin-bottom: 10px;
+          div {
+            width: fit-content;
+            height: 25px;
+            background-color: whitesmoke;
+            display: flex;
+            align-items: center;
+            padding: 0 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px lightgrey;
+            font-family: var(--fontFamily);
+          }
+          .colon {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            color: #fff;
+          }
+        }
+        .img-2 {
+          width: 80px;
+          height: 80px;
+          display: block;
+          margin: 10px auto;
+        }
+        .swiper-slide-item-observe {
+          width: 100%;
+          a {
+            text-decoration: none;
+            font-family: var(--fontFamily);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      .swiper-slide-item-product {
+        padding: 8px;
+        width: 100%;
+        height: inherit;
+        .amazing-image {
+          width: 132px;
+          height: 132px;
+          display: block;
+          margin: 5px auto;
+        }
+        h6 {
+          font-family: var(--fontNumber);
+          font-weight: lighter;
+          font-size: 12px;
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          line-height: 25px;
+          margin-bottom: 5px;
+          width: 80%;
+          color: #6b6b6b;
+        }
+        .price {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row-reverse wrap;
+          font-family: var(--fontNumber);
+          .price-container {
+            display: flex;
+            img {
+            }
+            div {
+            }
+          }
+          .price-discount {
+            background-color: crimson;
+            border-radius: 10px;
+            color: #fff;
+            padding: 0 8px;
+          }
+        }
+        .discount {
+          width: 100%;
+          text-decoration: line-through;
+          text-align: left;
+          font-family: var(--fontNumber);
+          color: lightgrey;
+          padding-left: 15px;
+          font-size: 14px;
+        }
+      }
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.transparent {
+  background-color: transparent !important;
+}
+.radiusAmazingFirst {
+  border-radius: 0 10px 10px 0;
+}
+.amazing-last-slide{
+  .amazing-last-slide-link{
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .amazing-last-slide-circle{
+      border: 2px solid #3588c0;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+    .amazing-last-slide-text{
+      margin-top: 20px;
+      color: rgb(97, 97, 97);
+      font-family: var(--fontFamily);
+    }
+  }
+}
