@@ -53,24 +53,102 @@
         </div>
         <div class="header-bottom">
           <div class="header-bottom-right">
-            <nav>
-              <div>
-                <a href="#" class="activeMenu">
+            <nav class="header-bottom-right-nav">
+              <div class="header-bottom-right-item menu-nav-item">
+                <a
+                  class="header-bottom-right-link menu-nav-link"
+                  href="#"
+                  class="activeMenu"
+                >
                   <img src="./images/svg/bars.svg" alt="" />
                   دسته‌بندی کالا</a
                 >
+                <div class="menu-nav-submenu">
+                  <div class="menu-nav-submenu-category">
+                    <div class="menu-nav-submenu-category-item">
+                      <a href="#" class="menu-nav-submenu-category-item-link"
+                        >موبایل</a
+                      >
+                      <div
+                        class="menu-nav-submenu-category-item-submenu active-megamenu"
+                      >
+                        Mobile
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >کالای دیجیتال</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        Digitals
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >لوازم،هنر،کتاب</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        Art
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >خانه و آشپزخانه</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        آشپزخانه
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >لوازم خانگی برقی</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        خانگی
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >مد و پوشاک</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        لباس
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >طلا و نقره</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        طلا
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >آرایشی بهداشتی</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        آرایش
+                      </div>
+                    </div>
+
+                    <!-- ***** -->
+                  </div>
+                </div>
               </div>
-              <div>
+
+              <div class="header-bottom-right-item header-bottom-right-span">
                 <span></span>
-              </div>
-              <div>
-                <a href="./incredible-offers.html">
+                <a
+                  class="header-bottom-right-link"
+                  href="./incredible-offers.html"
+                >
                   <img src="./images/svg/amazing-nav.svg" alt="" />
                   شگفت انگیزها</a
                 >
               </div>
-              <div>
-                <a href="#">
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
                   <svg
                     width="18px"
                     height="18px"
@@ -100,35 +178,34 @@
                   سوپر مارکت</a
                 >
               </div>
-              <div>
-                <a href="#">
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
                   <img src="./images/svg/giftcard.svg" alt="" />
                   کارت هدیه</a
                 >
               </div>
-              <div>
-                <a href="#">
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
                   <img src="./images/svg/hot.svg" alt="" />
                   پرفروش‌ترین‌ها</a
                 >
               </div>
 
-              <div>
+              <div class="header-bottom-right-item header-bottom-right-span">
                 <span></span>
-              </div>
-
-              <div>
-                <a href="#">
+                <a class="header-bottom-right-link" href="#">
                   <img src="./images/svg/discount.svg" alt="" />
                   تخفیف‌ها و پیشنهادها</a
                 >
               </div>
-              <div>
+              <div class="header-bottom-right-span header-bottom-right-item">
                 <span></span>
-                <a href="#"> سوالی دارید؟</a>
+                <a class="header-bottom-right-link" href="#"> سوالی دارید؟</a>
               </div>
-              <div>
-                <a href="#"> در دیجی‌کالا بفروشید!</a>
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
+                  در دیجی‌کالا بفروشید!</a
+                >
               </div>
             </nav>
           </div>
@@ -3162,24 +3239,69 @@
       <!-- #endregion fixed-supermarket-->
 
       <!-- #region online-support-->
-      <button class="online-support">
+      <button class="online-support-button" id="show-card-modal">
         <div>
           <div>
             <img src="./images/svg/haedphone.svg" alt="" />
           </div>
         </div>
       </button>
-      <div class="online-support-card">
-        <div class="online-support-card-title"></div>
-        <p></p>
 
-        <button>
-          <div>تماس با ما</div>
-          <div>
-            <img src="" alt="" />
+      <div id="card-modal" class="card-overlay">
+        <div class="card-box">
+          <span id="close-card-modal" class="card-close">&times;</span>
+          <div class="online-support-card">
+            <h2>پشتیبانی آنلاین</h2>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #fff"
+              width="32"
+              height="32"
+            >
+              <defs>
+                <symbol
+                  id="arrowLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.293 19.707l1.414-1.414L7.414 13H20v-2H7.414l5.293-5.293-1.414-1.414-7 7a1 1 0 000 1.414l7 7z"
+                    clip-rule="evenodd"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  fill-rule="evenodd"
+                  d="M11.293 19.707l1.414-1.414L7.414 13H20v-2H7.414l5.293-5.293-1.414-1.414-7 7a1 1 0 000 1.414l7 7z"
+                  clip-rule="evenodd"
+                ></path>
+              </g>
+            </svg>
           </div>
-        </button>
+          <div class="online-support-card-container">
+            <p class="online-support-card-hello">سلام👋👋</p>
+            <p class="online-support-card-detail">
+              اینجا می‌توانید تعدادی از پرسش های متداول را ببینید یا در صورت
+              تمایل با ما آنلاین گفتگو کنید!
+            </p>
+            <div class="online-support-card-question">
+              چگونه میتوانم یک پروفایل ایجاد کنم؟
+            </div>
+            <div class="online-support-card-question">
+              چطور در دیجی کالا سفارش خود را ثبت کنم ؟
+            </div>
+            <div class="online-support-card-question">
+              کالایی را که در طرح پیشنهاد شگفت انگیز می باشد می توان با تعداد
+              بیش از یک عدد خریداری کرد؟
+            </div>
+            <div class="online-support-card-call-us">تماس با ما</div>
+          </div>
+        </div>
       </div>
+
       <!-- #endregion online-support-->
 
       <!-- end wrapper -->
@@ -3290,6 +3412,28 @@
       dialogOverlay.addEventListener("click", (e) => {
         if (e.target === dialogOverlay) {
           dialogOverlay.classList.remove("visible");
+        }
+      });
+      //***********
+      // Select Elements
+      const openCardModal = document.getElementById("show-card-modal");
+      const closeCardModal = document.getElementById("close-card-modal");
+      const cardModal = document.getElementById("card-modal");
+
+      // Open Card Modal
+      openCardModal.addEventListener("click", () => {
+        cardModal.classList.add("visible");
+      });
+
+      // Close Card Modal
+      closeCardModal.addEventListener("click", () => {
+        cardModal.classList.remove("visible");
+      });
+
+      // Close Card Modal when clicking outside the card-box
+      cardModal.addEventListener("click", (e) => {
+        if (e.target === cardModal) {
+          cardModal.classList.remove("visible");
         }
       });
     </script>
