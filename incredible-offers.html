@@ -53,24 +53,102 @@
         </div>
         <div class="header-bottom">
           <div class="header-bottom-right">
-            <nav>
-              <div>
-                <a href="#" class="activeMenu">
+            <nav class="header-bottom-right-nav">
+              <div class="header-bottom-right-item menu-nav-item">
+                <a
+                  class="header-bottom-right-link menu-nav-link"
+                  href="#"
+                  class="activeMenu"
+                >
                   <img src="./images/svg/bars.svg" alt="" />
                   دسته‌بندی کالا</a
                 >
+                <div class="menu-nav-submenu">
+                  <div class="menu-nav-submenu-category">
+                    <div class="menu-nav-submenu-category-item">
+                      <a href="#" class="menu-nav-submenu-category-item-link"
+                        >موبایل</a
+                      >
+                      <div
+                        class="menu-nav-submenu-category-item-submenu active-megamenu"
+                      >
+                        Mobile
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >کالای دیجیتال</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        Digitals
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >لوازم،هنر،کتاب</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        Art
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >خانه و آشپزخانه</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        آشپزخانه
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >لوازم خانگی برقی</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        خانگی
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >مد و پوشاک</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        لباس
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >طلا و نقره</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        طلا
+                      </div>
+                    </div>
+                    <div class="menu-nav-submenu-category-item">
+                      <a class="menu-nav-submenu-category-item-link" href="#"
+                        >آرایشی بهداشتی</a
+                      >
+                      <div class="menu-nav-submenu-category-item-submenu">
+                        آرایش
+                      </div>
+                    </div>
+
+                    <!-- ***** -->
+                  </div>
+                </div>
               </div>
-              <div>
+
+              <div class="header-bottom-right-item header-bottom-right-span">
                 <span></span>
-              </div>
-              <div>
-                <a href="./incredible-offers.html">
+                <a
+                  class="header-bottom-right-link"
+                  href="./incredible-offers.html"
+                >
                   <img src="./images/svg/amazing-nav.svg" alt="" />
                   شگفت انگیزها</a
                 >
               </div>
-              <div>
-                <a href="#">
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
                   <svg
                     width="18px"
                     height="18px"
@@ -100,44 +178,461 @@
                   سوپر مارکت</a
                 >
               </div>
-              <div>
-                <a href="#">
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
                   <img src="./images/svg/giftcard.svg" alt="" />
                   کارت هدیه</a
                 >
               </div>
-              <div>
-                <a href="#">
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
                   <img src="./images/svg/hot.svg" alt="" />
                   پرفروش‌ترین‌ها</a
                 >
               </div>
 
-              <div>
+              <div class="header-bottom-right-item header-bottom-right-span">
                 <span></span>
-              </div>
-
-              <div>
-                <a href="#">
+                <a class="header-bottom-right-link" href="#">
                   <img src="./images/svg/discount.svg" alt="" />
                   تخفیف‌ها و پیشنهادها</a
                 >
               </div>
-              <div>
+              <div class="header-bottom-right-span header-bottom-right-item">
                 <span></span>
-                <a href="#"> سوالی دارید؟</a>
+                <a class="header-bottom-right-link" href="#"> سوالی دارید؟</a>
               </div>
-              <div>
-                <a href="#"> در دیجی‌کالا بفروشید!</a>
+              <div class="header-bottom-right-item">
+                <a class="header-bottom-right-link" href="#">
+                  در دیجی‌کالا بفروشید!</a
+                >
               </div>
             </nav>
           </div>
-          <div class="header-bottom-left">
-            <img src="./images/svg/location.svg" alt="" />
-            <div>ارسال به تهران، تهران</div>
+          <div class="header-bottom-left-cities">
+            <button class="header-bottom-left-cities-button" id="open-modal">
+              <img src="./images/svg/location.svg" alt="" />
+              <div>ارسال به تهران، تهران</div>
+            </button>
           </div>
         </div>
       </header>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-content-title">
+            <h2>انتخاب شهر</h2>
+            <span id="close-modal" class="close-button">&times;</span>
+          </div>
+
+          <input
+            class="modal-content-input"
+            type="text"
+            placeholder="جستجو در استان‌ها و شهرستان‌های ایران"
+          />
+          <p class="modal-content-detail">
+            برای مشاهده تخفیف‌ها و کالا‌های قابل ارسال به شهرتان، آن را انتخاب
+            کنید.
+          </p>
+          <h2>شهرهای پر تکرار</h2>
+          <div class="modal-content-all-cities">
+            <div class="modal-content-all-city">تهران</div>
+            <div class="modal-content-all-city">اصفهان</div>
+            <div class="modal-content-all-city">مشهد</div>
+            <div class="modal-content-all-city">شیراز</div>
+            <div class="modal-content-all-city">ساری</div>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="modal-content-city-row">
+            <div class="modal-content-city-container">
+              <span class="modal-content-city-name">آذرشهر</span>
+              <span class="modal-content-province-name">در آذربایجان شرقی</span>
+            </div>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: #2b2b2b"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="chevronLeft"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
       <!-- #endregion header -->
 
       <!-- #region slider -->
@@ -1681,7 +2176,7 @@
       <!-- #endregion timer-plus -->
 
       <!-- #region all-incredibles -->
-       <div></div>
+      <div></div>
       <!-- #endregion all-incredibles -->
 
       <!-- #region footer-->
